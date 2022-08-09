@@ -33,7 +33,7 @@
   box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
   text-align: center;
   padding: 30px;
-  border-radius: 3px;
+  border-radius: 5px;
   background-color: #FFA5BA;
   background-image: url("/icons/modal-pic.png");
   background-repeat: no-repeat;
@@ -44,6 +44,8 @@
 
 .user-feedback-form {
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .form-message {
@@ -52,8 +54,8 @@
   font-family: "Titan One";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.14;
+  font-size: 18px;
+  line-height: 1.52;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -72,9 +74,12 @@
 }
 
 .input-label {
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 0.01em;
   margin-bottom: 4px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: white;
   cursor: pointer;
 }
 
@@ -92,16 +97,16 @@
   cursor: pointer;
 }
 .input-field:hover, .input-field:focus {
-  border-color: var(--focus-color);
+  border-color: #D41443;
 }
 .input-field:hover:hover + .form-icon, .input-field:hover:focus + .form-icon, .input-field:focus:hover + .form-icon, .input-field:focus:focus + .form-icon {
-  color: var(--focus-color);
+  color: #D41443;
 }
 
 .input-string {
   display: inline-block;
   position: relative;
-  color: #000000;
+  color: #FFB8CA;
 }
 
 .form-icon {
@@ -123,7 +128,7 @@
   outline: transparent;
 }
 .comment-field:hover, .comment-field:focus {
-  border-color: var(--focus-color);
+  border-color: #D41443;
 }
 
 .user-agreement-txt {
@@ -175,7 +180,7 @@
   right: 8px;
   width: 30px;
   height: 30px;
-  fill: #D41443;
+  fill: #FFB8CA;
   border: 1px solid rgba(212, 20, 67, 0.5);
   border-radius: 50%;
   background-color: #fff;
@@ -183,7 +188,7 @@
   transition: fill 250ms var(--transaction-time);
 }
 .close-btn:hover, .close-btn:focus {
-  fill: var(--focus-color);
+  fill: #D41443;
 }
 
 /* Стили для активных классов подложки и окна */
