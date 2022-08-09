@@ -23,18 +23,17 @@
     </button>
   </div>
 </header>
-
     <div class="modal" data-modal="1">
       <!--   Svg иконка для закрытия окна  -->
-            <button data-modal-close type="button" class="close-btn">
-                <svg width="18" height="18">
-                  <use href="./images/icons/icons.svg#icon-close-btn"></use>
+            <button  type="button" class="close-btn">
+                <svg width="18" height="18" class="js-modal-close">
+                  <use href="./icons/symbol-defs.svg#icon-cross"></use>
                 </svg>
               </button>
               <form class="user-feedback-form">
-                <strong class="form-message">Оставьте свои данные, мы вам перезвоним</strong>
+                <strong class="form-message">Please, take a short survevy and we will contact you soon</strong>
                 <div class="form-input">
-                  <label for="user-name" class="input-label">Имя</label>
+                  <label for="user-name" class="input-label">Name</label>
                   <div class="input-string">
                     <input
                       type="text"
@@ -44,12 +43,12 @@
                       required
                     />
                     <svg class="form-icon" width="18" height="18">
-                      <use href="./images/icons/icons.svg#icon-person-black"></use>
+                      <use href="./icons/symbol-defs.svg#icon-user"></use>
                     </svg>
                   </div>
                 </div>
                 <div class="form-input">
-                  <label for="user-phone" class="input-label">Телефон</label>
+                  <label for="user-phone" class="input-label">Phone number</label>
                   <div class="input-string">
                     <input
                       type="tel"
@@ -59,12 +58,12 @@
                       required
                     />
                     <svg class="form-icon" width="18" height="18">
-                      <use href="./images/icons/icons.svg#icon-phone-black"></use>
+                      <use href="./icons/symbol-defs.svg#icon-mobile"></use>
                     </svg>
                   </div>
                 </div>
                 <div class="form-input">
-                  <label for="user-email" class="input-label">Почта</label>
+                  <label for="user-email" class="input-label">e-mail</label>
                   <div class="input-string">
                     <input
                       type="email"
@@ -74,12 +73,12 @@
                       required
                     />
                     <svg class="form-icon" width="18" height="18">
-                      <use href="./images/icons/icons.svg#icon-email-black"></use>
+                      <use href="./icons/symbol-defs.svg#icon-mail4"></use>
                     </svg>
                   </div>
                 </div>
                 <div class="form-input">
-                  <label for="user-comment" class="input-label">Комментарий</label>
+                  <label for="user-comment" class="input-label">Details</label>
                   <textarea
                     name="user-comment"
                     id="user-comment"
@@ -96,9 +95,9 @@
                   />
                   <span class="checkbox-custom"></span>
                   <span>Соглашаюсь с рассылкой и принимаю</span>
-                  <a class="agreement-cond" href="./index.html">Условия договора</a>
+                  <a class="agreement-cond" href="./index.html">Licence</a>
                 </label>
-                <button type="submit" class="btn">Отправить</button>
+                <button type="submit" class="btn">Submit</button>
               </form>
     </div>
 

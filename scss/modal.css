@@ -34,7 +34,11 @@
   text-align: center;
   padding: 30px;
   border-radius: 3px;
-  background-color: #fff;
+  background-color: #FFA5BA;
+  background-image: url("/icons/modal-pic.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
   transition: 0.3s all;
 }
 
@@ -45,12 +49,15 @@
 .form-message {
   display: inline-block;
   margin-bottom: 12px;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.14;
   text-align: center;
-  color: var(--secondary-txt-color);
-  letter-spacing: inherit;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #D41443;
 }
 
 .form-input {
@@ -168,8 +175,8 @@
   right: 8px;
   width: 30px;
   height: 30px;
-  color: #000000;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  fill: #D41443;
+  border: 1px solid rgba(212, 20, 67, 0.5);
   border-radius: 50%;
   background-color: #fff;
   cursor: pointer;
@@ -184,15 +191,4 @@
 .overlay.active {
   opacity: 1;
   visibility: visible;
-}
-
-/* Стили для кнопки закрытия */
-.modal__cross {
-  width: 15px;
-  height: 15px;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  fill: #444;
-  cursor: pointer;
 }/*# sourceMappingURL=modal.css.map */
