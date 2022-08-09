@@ -26,6 +26,7 @@
     background-color: rgba(0, 0, 0, .5);
     z-index: 20;
     transition: .3s all;
+
 }
 /* Стили для модальных окон */
 
@@ -59,6 +60,7 @@
     background-position: right;
 
     transition: 0.3s all;
+
 }
 
 .user-feedback-form {
@@ -196,16 +198,19 @@
     user-select: none;
     margin-bottom: 30px;
 
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.17;
     font-weight: 700;
     gap: 8px;
  
     color: #fff;
 
-
+    @media screen and (min-width:768px) {
+        justify-content: flex-start;
+        
+    }
     @media screen and (min-width:1200px) {
-        font-size: 12px;
+      
         line-height: 1.71;
     }
 }
@@ -215,14 +220,14 @@
     width: 16px;
     height: 15px;
     
-    background-image: url(../images/icons/custom-check-box-icons/icon-check-2.svg);
+    background-image: url(../icons/custom-check-box-icons/icon-check-2.svg);
 }
 
 .checkbox:checked+.checkbox-custom {
 
 
 
-    background-image: url(../images/icons/custom-check-box-icons/icon-check-1.svg);
+    background-image: url(../icons/custom-check-box-icons/icon-check-1.svg);
 
     background-size: contain;
     background-origin: border-box;

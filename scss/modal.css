@@ -165,15 +165,19 @@
       -ms-user-select: none;
           user-select: none;
   margin-bottom: 30px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.17;
   font-weight: 700;
   gap: 8px;
   color: #fff;
 }
+@media screen and (min-width: 768px) {
+  .user-agreement-txt {
+    justify-content: flex-start;
+  }
+}
 @media screen and (min-width: 1200px) {
   .user-agreement-txt {
-    font-size: 12px;
     line-height: 1.71;
   }
 }
@@ -181,11 +185,11 @@
 .checkbox-custom {
   width: 16px;
   height: 15px;
-  background-image: url(../images/icons/custom-check-box-icons/icon-check-2.svg);
+  background-image: url(../icons/custom-check-box-icons/icon-check-2.svg);
 }
 
 .checkbox:checked + .checkbox-custom {
-  background-image: url(../images/icons/custom-check-box-icons/icon-check-1.svg);
+  background-image: url(../icons/custom-check-box-icons/icon-check-1.svg);
   background-size: contain;
   background-origin: border-box;
   border-radius: 2px;
