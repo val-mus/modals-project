@@ -1,4 +1,17 @@
 /* Стили для подложки */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 .overlay {
 
@@ -38,7 +51,7 @@
     text-align: center;
     padding: 30px;
     border-radius: 5px;
-    background-color: #FFA5BA;
+    background-color: #FFB8CA;
 
     background-image: url('/icons/modal-pic.png');
     background-repeat: no-repeat;
@@ -50,13 +63,13 @@
 
 .user-feedback-form {
     width: 100%;
+
     display: flex;
     flex-direction: column;
-
-
 }
 
 .form-message {
+
     display: inline-block;
 
     margin-bottom: 12px;
@@ -70,6 +83,13 @@
     text-transform: uppercase;
 
     color: #D41443;
+
+    @media screen and (min-width:768px) {
+        font-size: 20px;
+    }
+    @media screen and (min-width:1200px) {
+            font-size: 22px;
+    }
 }
 
 .form-input {
@@ -78,8 +98,6 @@
     flex-direction: column;
     text-align: left;
     margin-bottom: 10px;
-
-
 }
 
 .form-input:last-of-type {
@@ -87,13 +105,14 @@
 }
 
 .input-label {
+
     font-size: 14px;
     letter-spacing: 0.01em;
     margin-bottom: 4px;
 
     font-weight: 500;
     letter-spacing: 0.06em;
-    color: white;
+    color: #D41443;
 
     cursor: pointer;
 }
@@ -130,7 +149,7 @@
 .input-string {
     display: inline-block;
     position: relative;
-    color:#FFB8CA;;
+    color:#FFB8CA;
 
 
 }
@@ -152,8 +171,6 @@
 
 .comment-field {
 
-
-
     height: 120px;
     resize: none;
     padding: 12px 16px;
@@ -170,34 +187,40 @@
 }
 
 
-
 .user-agreement-txt {
+
     display: inline-flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     user-select: none;
     margin-bottom: 30px;
+
     font-size: 12px;
     line-height: 1.17;
+    font-weight: 700;
+    gap: 8px;
+ 
+    color: #fff;
 
 
     @media screen and (min-width:1200px) {
-        font-size: inherit;
+        font-size: 12px;
         line-height: 1.71;
     }
 }
 
 .checkbox-custom {
+
     width: 16px;
     height: 15px;
-    margin-right: 8px;
-
+    
     background-image: url(../images/icons/custom-check-box-icons/icon-check-2.svg);
 }
 
 .checkbox:checked+.checkbox-custom {
-    border-color: var(--focus-color);
+
+
 
     background-image: url(../images/icons/custom-check-box-icons/icon-check-1.svg);
 
@@ -207,13 +230,11 @@
 }
 
 .agreement-cond {
-    color: var(--focus-color);
+    font-weight: 800;
+    color: #D41443;
 }
 
-
-
-
-.close-btn {
+.modal__close-btn {
 
     display: flex;
     align-items: center;
@@ -229,9 +250,11 @@
     height: 30px;
 
     fill: #FFB8CA;
-    border: 1px solid rgba(212, 20, 67, 0.5);
+    border: 1px solid rgba(212, 20, 67, 0.2);
     border-radius: 50%;
     background-color: #fff;
+    box-shadow: 0 3px 10px -.5px rgba(212, 20, 67, 0.2);
+
 
     cursor: pointer;
 

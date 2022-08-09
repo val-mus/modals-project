@@ -1,5 +1,19 @@
 @charset "UTF-8";
 /* Стили для подложки */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .overlay {
   /* Скрываем подложку  */
   opacity: 0;
@@ -34,7 +48,7 @@
   text-align: center;
   padding: 30px;
   border-radius: 5px;
-  background-color: #FFA5BA;
+  background-color: #FFB8CA;
   background-image: url("/icons/modal-pic.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -61,6 +75,16 @@
   text-transform: uppercase;
   color: #D41443;
 }
+@media screen and (min-width: 768px) {
+  .form-message {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form-message {
+    font-size: 22px;
+  }
+}
 
 .form-input {
   display: flex;
@@ -79,7 +103,7 @@
   margin-bottom: 4px;
   font-weight: 500;
   letter-spacing: 0.06em;
-  color: white;
+  color: #D41443;
   cursor: pointer;
 }
 
@@ -143,10 +167,13 @@
   margin-bottom: 30px;
   font-size: 12px;
   line-height: 1.17;
+  font-weight: 700;
+  gap: 8px;
+  color: #fff;
 }
 @media screen and (min-width: 1200px) {
   .user-agreement-txt {
-    font-size: inherit;
+    font-size: 12px;
     line-height: 1.71;
   }
 }
@@ -154,12 +181,10 @@
 .checkbox-custom {
   width: 16px;
   height: 15px;
-  margin-right: 8px;
   background-image: url(../images/icons/custom-check-box-icons/icon-check-2.svg);
 }
 
 .checkbox:checked + .checkbox-custom {
-  border-color: var(--focus-color);
   background-image: url(../images/icons/custom-check-box-icons/icon-check-1.svg);
   background-size: contain;
   background-origin: border-box;
@@ -167,10 +192,11 @@
 }
 
 .agreement-cond {
-  color: var(--focus-color);
+  font-weight: 800;
+  color: #D41443;
 }
 
-.close-btn {
+.modal__close-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -181,13 +207,14 @@
   width: 30px;
   height: 30px;
   fill: #FFB8CA;
-  border: 1px solid rgba(212, 20, 67, 0.5);
+  border: 1px solid rgba(212, 20, 67, 0.2);
   border-radius: 50%;
   background-color: #fff;
+  box-shadow: 0 3px 10px -0.5px rgba(212, 20, 67, 0.2);
   cursor: pointer;
   transition: fill 250ms var(--transaction-time);
 }
-.close-btn:hover, .close-btn:focus {
+.modal__close-btn:hover, .modal__close-btn:focus {
   fill: #D41443;
 }
 
